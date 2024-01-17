@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agus API clima 🔮</title>
+    <style>
+        body {
+            max-width: 33vw;
+            margin: auto;
+            text-align: left;
+            padding: 10px;
+        }
+
+        input {
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        #response {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>API clima 🔮</h1>
+    <p>En una galaxia lejana Betasoide, Ferengi y Vulcano orbitan alrededor de un sol. <br> <br> En función de sus
+        posiciones diarias cambia el clima. <br> <br> Ingresá una fecha entre hoy y diez años para saber qué pasará
+        con el clima y tener un resumen de la próxima década.</p>
+    <label for="dateInput">Enter Date:</label>
+    <input type="date" id="dateInput">
+    <button onclick="fetchWeather()">Get Weather</button>
+    <div id="response"></div>
+
+    <script>
+        async function fetchWeather() {
+            const date = document.getElementById('dateInput').value;
+            const responseDiv = document.getElementById('response');
+
+            // Make API request
+            const response = await fetch(`/api/v1/pronostico/ParaFecha?date=${date}`);
+            const data = await response.json();
+
+            // Display API response
+            responseDiv.innerText = JSON.stringify(data, null, 2);
+        }
+    </script>
+</body>
+
+</html>
