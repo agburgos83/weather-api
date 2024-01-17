@@ -83,8 +83,8 @@ public class PronosticoService {
                 || lineaPlanetas.relativeCCW(centroSolar) == 0);
     }
 
-    // @Scheduled(cron = "0 * * * * *")
-    @Scheduled(cron = "0 0 5 * * *")
+    @Scheduled(cron = "0 * * * * *")
+    // @Scheduled(cron = "0 0 5 * * *")
     public RespuestaPronostico pronosticadorADiezAños() {
 
         String climaActual = "";
