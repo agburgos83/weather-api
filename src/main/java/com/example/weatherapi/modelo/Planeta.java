@@ -9,11 +9,11 @@ public abstract class Planeta {
     protected double velocidadAngular;
     protected Point posicionInicial;
 
-    public Planeta(String name, double distanciaAlSol, double velocidadAngular, Point unaPosicionInicial) {
+    public Planeta(String name, double distanciaAlSol, double velocidadAngular, Point posicionInicial) {
         this.name = name;
         this.distanciaAlSol = distanciaAlSol;
         this.velocidadAngular = velocidadAngular;
-        this.posicionInicial = unaPosicionInicial;
+        this.posicionInicial = posicionInicial;
     }
 
     public String getName() {

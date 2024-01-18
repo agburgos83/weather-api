@@ -28,10 +28,10 @@ public class PronosticoService {
 
     private LocalDate fechaAConsultar;
 
-    public PronosticoService(Betasoide unBetasoide, Ferengi unFerengi, Vulcano unVulcano) {
-        this.betasoide = unBetasoide;
-        this.ferengi = unFerengi;
-        this.vulcano = unVulcano;
+    public PronosticoService(Betasoide betasoide, Ferengi ferengi, Vulcano vulcano) {
+        this.betasoide = betasoide;
+        this.ferengi = ferengi;
+        this.vulcano = vulcano;
     }
 
     public void setFecha(LocalDate fechaAConsultar) {

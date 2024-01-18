@@ -6,8 +6,8 @@ public class RespuestaPronostico {
 
     private Map<String, Map<String, String>> resumenClimatico;
 
-    public RespuestaPronostico(Map<String, Map<String, String>> unaRespuesta) {
-        this.resumenClimatico = unaRespuesta;
+    public RespuestaPronostico(Map<String, Map<String, String>> respuesta) {
+        this.resumenClimatico = respuesta;
     }
 
     public Map<String, Map<String, String>> getResumenClimatico() {

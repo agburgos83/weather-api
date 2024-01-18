@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class Ferengi extends Planeta {
 
-    public Ferengi(String name, double distanciaAlSol, double velocidadAngular, Point unaPosicionInicial) {
-        super(name, distanciaAlSol, velocidadAngular, unaPosicionInicial);
+    public Ferengi(String name, double distanciaAlSol, double velocidadAngular, Point posicionInicial) {
+        super(name, distanciaAlSol, velocidadAngular, posicionInicial);
     }
 
 }

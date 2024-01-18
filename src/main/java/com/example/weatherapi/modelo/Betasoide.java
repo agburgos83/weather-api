@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class Betasoide extends Planeta {
 
-    public Betasoide(String name, double distanciaAlSol, double velocidadAngular, Point unaPosicionInicial) {
-        super(name, distanciaAlSol, velocidadAngular, unaPosicionInicial);
+    public Betasoide(String name, double distanciaAlSol, double velocidadAngular, Point posicionInicial) {
+        super(name, distanciaAlSol, velocidadAngular, posicionInicial);
     }
 
 }
